@@ -1,0 +1,52 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Vidéos index{% endblock %}
+
+{% block body %}
+    {# {% for label, messages in app.flashes() %}
+        {% for message in messages %}
+            <div class="alert alert-{{ label }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %} #}
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <h1>Vidéos index</h1>
+        {# <a href="{{ path('app_admin_categorie_new') }}" class="btn btn-secondary"><i class="align-middle" data-feather="plus-circle"></i></a> #}
+    </div>
+
+    <table class="table table-secondary table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>imageName</th>
+                <th>Titre</th>
+                <th>Réalisateur</th>
+                <th>Description</th>
+                <th>Catégorie</th>
+                <th>Durée</th>
+                <th>videoName</th>
+                <th>Slug</th>
+                <th class="text-end">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {# {% for categorie in categories %}
+            <tr>
+                <td>{{ categorie.id }}</td>
+                <td>{{ categorie.nom }}</td>
+                <td>{{ categorie.slug }}</td>
+                <td class="text-end">
+                    <a href="{{ path('app_admin_categorie_show', {'id': categorie.id}) }}" class="btn btn-warning"><i class="align-middle" data-feather="eye"></i></a>
+                    <a href="{{ path('app_admin_categorie_edit', {'id': categorie.id}) }}" class="btn btn-success"><i class="align-middle" data-feather="edit-2"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %} #}
+        </tbody>
+    </table>
+
+{% endblock %}

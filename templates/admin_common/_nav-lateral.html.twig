@@ -1,0 +1,35 @@
+<nav id="sidebar" class="sidebar js-sidebar">
+	<div class="sidebar-content js-simplebar">
+		<a class="sidebar-brand" href="{{ path('app_admin_dashboard') }}">
+			<span class="align-middle">Green TV Admin</span>
+		</a>
+		<ul class="sidebar-nav">
+			<li class="sidebar-header">Général</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{{ path('app_admin_dashboard') }}">
+					<i class="align-middle" data-feather="sliders"></i>
+					<span class="align-middle">Dashboard</span>
+				</a>
+			</li>
+			<li class="sidebar-header">Plateforme VoD</li>
+            <li class="sidebar-item">
+				<a class="sidebar-link" href="{{ path('app_admin_categorie') }}">
+					<i class="align-middle" data-feather="bookmark"></i>
+					<span class="align-middle">Catégories</span>
+				</a>
+			</li>
+            <li class="sidebar-item">
+				<a class="sidebar-link" href="{{ path('app_admin_video') }}">
+					<i class="align-middle" data-feather="book-open"></i>
+					<span class="align-middle">Vidéos</span>
+				</a>
+			</li>
+            <li class="sidebar-item">
+				<a class="sidebar-link" href="{{ path('app_admin_user') }}">
+					<i class="align-middle" data-feather="users"></i>
+					<span class="align-middle">Utilisateurs</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
