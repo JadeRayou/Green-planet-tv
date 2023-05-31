@@ -1,0 +1,9 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Nouvelle vidéo{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_admin_video_index') }}" class="btn btn-dark mb-3"><i class="align-middle" data-feather="arrow-left-circle"></i></a>
+    <h1>Créer une nouvelle vidéo</h1>
+    {{ include('admin_video/_form.html.twig') }}
+{% endblock %}

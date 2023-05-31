@@ -1,0 +1,54 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Vidéo{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_admin_video_index') }}" class="btn btn-dark mb-3"><i class="align-middle" data-feather="arrow-left-circle"></i></a>
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <h1>Vidéo</h1>
+        {{ include('admin_video/_delete_form.html.twig') }}
+    </div>
+
+    <table class="table table-secondary table-striped">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ video.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ video.titre }}</td>
+            </tr>
+            <tr>
+                <th>Realisateur</th>
+                <td>{{ video.realisateur }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ video.description }}</td>
+            </tr>
+            <tr>
+                <th>ImageName</th>
+                <td>{{ video.imageName }}</td>
+            </tr>
+            <tr>
+                <th>Duree</th>
+                <td>{{ video.duree }}</td>
+            </tr>
+            <tr>
+                <th>VideoName</th>
+                <td>{{ video.videoName }}</td>
+            </tr>
+            <tr>
+                <th>UpdatedAt</th>
+                <td>{{ video.updatedAt ? video.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Slug</th>
+                <td>{{ video.slug }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_video_edit', {'id': video.id}) }}" class="btn btn-success"><i class="align-middle" data-feather="edit-2"></i></a>
+{% endblock %}

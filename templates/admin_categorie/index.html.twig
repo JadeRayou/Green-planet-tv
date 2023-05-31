@@ -3,16 +3,16 @@
 {% block title %}Catégories index{% endblock %}
 
 {% block body %}
-    {# {% for label, messages in app.flashes() %}
+    {% for label, messages in app.flashes() %}
         {% for message in messages %}
             <div class="alert alert-{{ label }}" role="alert">
                 {{ message }}
             </div>
         {% endfor %}
-    {% endfor %} #}
+    {% endfor %}
     <div class="d-flex flex-wrap justify-content-between align-items-center">
         <h1>Catégories index</h1>
-        {# <a href="{{ path('app_admin_categorie_new') }}" class="btn btn-secondary"><i class="align-middle" data-feather="plus-circle"></i></a> #}
+        <a href="{{ path('app_admin_categorie_new') }}" class="btn btn-secondary"><i class="align-middle" data-feather="plus-circle"></i></a>
     </div>
 
     <table class="table table-secondary table-striped">
@@ -25,7 +25,7 @@
             </tr>
         </thead>
         <tbody>
-        {# {% for categorie in categories %}
+        {% for categorie in categories %}
             <tr>
                 <td>{{ categorie.id }}</td>
                 <td>{{ categorie.nom }}</td>
@@ -39,9 +39,7 @@
             <tr>
                 <td colspan="4">no records found</td>
             </tr>
-        {% endfor %} #}
+        {% endfor %}
         </tbody>
     </table>
-
 {% endblock %}
-
