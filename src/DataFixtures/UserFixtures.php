@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\User;
+use DateTimeImmutable;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
@@ -21,6 +22,8 @@ class UserFixtures extends Fixture
         $user->setPassword($this->encoder->hashPassword($user, 'pass'));
         $user->setRoles(['ROLE_USER', 'ROLE_ADMIN']);
         $user->setIsVerified(true);
+        $user->setUpdatedAt(new DateTimeImmutable());
+        $user->setSlug('jade');
         $manager->persist($user);
 
         $user = new User();
@@ -28,6 +31,8 @@ class UserFixtures extends Fixture
         $user->setPassword($this->encoder->hashPassword($user, 'pass'));
         $user->setRoles(['ROLE_USER', 'ROLE_ADMIN']);
         $user->setIsVerified(true);
+        $user->setUpdatedAt(new DateTimeImmutable());
+        $user->setSlug('valeriya');
         $manager->persist($user);
 
         $user = new User();
@@ -35,6 +40,8 @@ class UserFixtures extends Fixture
         $user->setPassword($this->encoder->hashPassword($user, 'pass'));
         $user->setRoles(['ROLE_USER', 'ROLE_ADMIN']);
         $user->setIsVerified(true);
+        $user->setUpdatedAt(new DateTimeImmutable());
+        $user->setSlug('lyly');
         $manager->persist($user);
 
         $user = new User();
@@ -42,6 +49,8 @@ class UserFixtures extends Fixture
         $user->setPassword($this->encoder->hashPassword($user, 'pass'));
         $user->setRoles(['ROLE_USER', 'ROLE_ADMIN']);
         $user->setIsVerified(true);
+        $user->setUpdatedAt(new DateTimeImmutable());
+        $user->setSlug('danielle');
         $manager->persist($user);
 
         $manager->flush();
