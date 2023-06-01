@@ -47,6 +47,7 @@ Vérifiez que dans votre base de données phpMyAdmin, les données rentrées gr�
 Testez vos modifications en ouvrant le fichier HTML dans votre navigateur.
 
 FONCTIONNALITES
+
 La plateforme présente différentes émissions sur la thèmatique écologique adaptée aux enfants, leurs familles et leurs professeurs de façon ludique.
 Les utilisateurs peuvent lire les vidéos aux choix en faisant défiler.
 Les utilisateurs peuvent choisir selon les catégories des vidéos en cliquant sur ceux proposer par des boutons.
